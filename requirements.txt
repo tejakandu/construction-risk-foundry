@@ -1,0 +1,6 @@
+numpy>=1.24,<2.1
+pandas>=2.0,<2.3
+Faker>=24
+pytest>=7
+# optional, for spark/run_local.py and tests/test_parity.py (also needs Java 11/17):
+# pyspark>=3.5,<3.6   (verified with 3.5.9 + Temurin JDK 17)

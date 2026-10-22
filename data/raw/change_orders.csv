@@ -1,0 +1,89 @@
+co_id,project_id,task_id,reason,cost_impact,days_impact,status,submitted_date
+CO-0001,P-1001,T-1001-06,Material substitution,712900.0,0,approved,2026-02-16
+CO-0002,P-1001,T-1001-06,Owner-requested scope change,66200.0,1,rejected,2026-02-04
+CO-0003,P-1001,T-1001-05,Utility conflict,396800.0,1,approved,2026-01-13
+CO-0004,P-1001,T-1001-05,Owner-requested scope change,60600.0,0,approved,2026-01-21
+CO-0005,P-1002,T-1002-03,Owner-requested scope change,312500.0,8,pending,2025-04-23
+CO-0006,P-1002,T-1002-02,Owner-requested scope change,184000.0,16,approved,2025-03-19
+CO-0007,P-1002,T-1002-05,Design error/omission,615400.0,15,approved,2025-09-22
+CO-0008,P-1002,T-1002-05,Utility conflict,184700.0,15,approved,2025-09-25
+CO-0009,P-1002,T-1002-03,Unforeseen site condition,212100.0,4,approved,2025-04-20
+CO-0010,P-1002,T-1002-07,Code/permit compliance,203900.0,15,approved,2026-01-01
+CO-0011,P-1002,T-1002-05,Value engineering,163700.0,6,rejected,2025-09-23
+CO-0012,P-1003,T-1003-02,Design error/omission,993800.0,9,approved,2025-10-01
+CO-0013,P-1003,T-1003-01,Unforeseen site condition,671800.0,9,approved,2025-08-14
+CO-0014,P-1003,T-1003-01,Value engineering,668500.0,20,approved,2025-08-12
+CO-0015,P-1003,T-1003-01,Unforeseen site condition,403700.0,6,approved,2025-07-27
+CO-0016,P-1004,T-1004-12,Code/permit compliance,251000.0,5,approved,2025-11-03
+CO-0017,P-1005,T-1005-12,Design error/omission,413700.0,0,approved,2026-03-10
+CO-0018,P-1005,T-1005-09,Value engineering,205800.0,0,approved,2025-09-27
+CO-0019,P-1006,T-1006-03,Unforeseen site condition,256500.0,13,approved,2025-04-28
+CO-0020,P-1006,T-1006-02,Value engineering,272700.0,4,approved,2025-03-15
+CO-0021,P-1006,T-1006-07,Material substitution,393900.0,3,approved,2026-03-10
+CO-0022,P-1006,T-1006-02,Unforeseen site condition,80400.0,12,approved,2025-02-26
+CO-0023,P-1006,T-1006-03,Code/permit compliance,468300.0,15,approved,2025-04-15
+CO-0024,P-1006,T-1006-02,Design error/omission,330600.0,20,approved,2025-02-16
+CO-0025,P-1006,T-1006-04,Value engineering,139700.0,14,rejected,2025-05-21
+CO-0026,P-1006,T-1006-05,Unforeseen site condition,155600.0,18,approved,2025-10-16
+CO-0027,P-1007,T-1007-04,Utility conflict,357800.0,1,approved,2026-02-22
+CO-0028,P-1008,T-1008-06,Design error/omission,332600.0,17,approved,2025-05-26
+CO-0029,P-1008,T-1008-01,Unforeseen site condition,254800.0,7,approved,2024-11-22
+CO-0030,P-1008,T-1008-08,Utility conflict,263100.0,17,approved,2025-10-11
+CO-0031,P-1008,T-1008-07,Value engineering,300300.0,5,approved,2025-07-18
+CO-0032,P-1008,T-1008-07,Unforeseen site condition,144500.0,4,approved,2025-07-19
+CO-0033,P-1008,T-1008-10,Code/permit compliance,208600.0,3,approved,2026-02-04
+CO-0034,P-1008,T-1008-03,Unforeseen site condition,335000.0,16,approved,2025-01-15
+CO-0035,P-1008,T-1008-07,Unforeseen site condition,454500.0,16,approved,2025-07-27
+CO-0036,P-1008,T-1008-01,Value engineering,305800.0,7,approved,2024-11-11
+CO-0037,P-1008,T-1008-07,Design error/omission,68100.0,7,approved,2025-06-21
+CO-0038,P-1008,T-1008-03,Material substitution,126100.0,8,approved,2025-01-06
+CO-0039,P-1008,T-1008-05,Utility conflict,528800.0,19,rejected,2025-04-01
+CO-0040,P-1008,T-1008-02,Owner-requested scope change,330300.0,16,rejected,2024-12-11
+CO-0041,P-1009,T-1009-10,Owner-requested scope change,46800.0,5,approved,2026-01-10
+CO-0042,P-1009,T-1009-03,Owner-requested scope change,93200.0,2,approved,2025-08-13
+CO-0043,P-1009,T-1009-03,Material substitution,42200.0,0,approved,2025-08-20
+CO-0044,P-1009,T-1009-12,Owner-requested scope change,128300.0,5,rejected,2026-02-17
+CO-0045,P-1011,T-1011-06,Code/permit compliance,184000.0,19,approved,2026-03-09
+CO-0046,P-1012,T-1012-02,Code/permit compliance,24400.0,1,approved,2025-09-03
+CO-0047,P-1012,T-1012-03,Utility conflict,47200.0,0,rejected,2025-11-11
+CO-0048,P-1013,T-1013-05,Value engineering,65000.0,3,approved,2025-11-15
+CO-0049,P-1013,T-1013-02,Utility conflict,233100.0,1,approved,2025-07-24
+CO-0050,P-1014,T-1014-01,Utility conflict,458900.0,18,approved,2025-07-13
+CO-0051,P-1014,T-1014-03,Utility conflict,329900.0,8,approved,2025-08-25
+CO-0052,P-1014,T-1014-06,Unforeseen site condition,170400.0,19,approved,2026-01-06
+CO-0053,P-1014,T-1014-06,Value engineering,239700.0,18,rejected,2026-01-14
+CO-0054,P-1014,T-1014-02,Owner-requested scope change,442900.0,3,rejected,2025-08-04
+CO-0055,P-1014,T-1014-03,Code/permit compliance,348700.0,6,approved,2025-09-05
+CO-0056,P-1014,T-1014-04,Owner-requested scope change,132900.0,9,approved,2025-10-05
+CO-0057,P-1014,T-1014-04,Utility conflict,474500.0,13,approved,2025-09-18
+CO-0058,P-1014,T-1014-05,Design error/omission,521100.0,15,approved,2025-11-21
+CO-0059,P-1016,T-1016-07,Material substitution,431800.0,5,approved,2025-03-20
+CO-0060,P-1017,T-1017-04,Value engineering,188100.0,5,approved,2025-08-27
+CO-0061,P-1017,T-1017-02,Design error/omission,650500.0,3,approved,2025-06-07
+CO-0062,P-1017,T-1017-08,Material substitution,514900.0,10,pending,2026-03-03
+CO-0063,P-1017,T-1017-03,Material substitution,324900.0,3,approved,2025-08-09
+CO-0064,P-1017,T-1017-03,Value engineering,280500.0,7,approved,2025-08-15
+CO-0065,P-1017,T-1017-06,Value engineering,1707500.0,6,approved,2025-11-17
+CO-0066,P-1017,T-1017-05,Utility conflict,661700.0,20,rejected,2025-09-25
+CO-0067,P-1017,T-1017-03,Utility conflict,525800.0,12,approved,2025-08-06
+CO-0068,P-1017,T-1017-02,Material substitution,621700.0,3,rejected,2025-06-01
+CO-0069,P-1017,T-1017-07,Unforeseen site condition,950500.0,10,approved,2026-02-18
+CO-0070,P-1017,T-1017-08,Utility conflict,702900.0,11,pending,2026-03-10
+CO-0071,P-1017,T-1017-03,Owner-requested scope change,1897700.0,8,pending,2025-07-21
+CO-0072,P-1017,T-1017-07,Utility conflict,704500.0,18,approved,2026-02-14
+CO-0073,P-1017,T-1017-05,Value engineering,816900.0,2,approved,2025-10-12
+CO-0074,P-1017,T-1017-08,Unforeseen site condition,1182200.0,19,approved,2026-03-14
+CO-0075,P-1018,T-1018-10,Design error/omission,332800.0,4,approved,2025-11-14
+CO-0076,P-1018,T-1018-12,Unforeseen site condition,188300.0,1,pending,2026-03-08
+CO-0077,P-1018,T-1018-03,Design error/omission,169200.0,2,rejected,2024-11-20
+CO-0078,P-1018,T-1018-12,Material substitution,398000.0,2,pending,2026-03-08
+CO-0079,P-1019,T-1019-05,Material substitution,375400.0,3,approved,2025-09-20
+CO-0080,P-1019,T-1019-01,Unforeseen site condition,1165600.0,3,approved,2025-05-09
+CO-0081,P-1019,T-1019-06,Utility conflict,471800.0,5,approved,2025-12-26
+CO-0082,P-1019,T-1019-04,Unforeseen site condition,979600.0,8,approved,2025-09-04
+CO-0083,P-1019,T-1019-03,Material substitution,767600.0,7,approved,2025-07-22
+CO-0084,P-1019,T-1019-04,Unforeseen site condition,1494900.0,3,approved,2025-08-28
+CO-0085,P-1019,T-1019-01,Design error/omission,467700.0,2,pending,2025-05-13
+CO-0086,P-1020,T-1020-02,Value engineering,315600.0,9,rejected,2025-10-02
+CO-0087,P-1020,T-1020-01,Code/permit compliance,615800.0,18,rejected,2025-08-02
+CO-0088,P-1020,T-1020-02,Value engineering,1528700.0,3,approved,2025-09-30

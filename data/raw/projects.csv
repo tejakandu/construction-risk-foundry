@@ -1,0 +1,21 @@
+project_id,name,type,city,budget,start_date,planned_end_date,percent_complete,actual_cost_to_date,project_manager
+P-1001,Riverside Commons Office Tower,commercial,Hamilton,45143000.0,2025-06-03,2027-09-30,30.3,14318388.72,Allison Hill
+P-1002,Grand River Medical Pavilion,commercial,Hamilton,36936000.0,2025-01-12,2027-02-10,48.3,19620617.16,Noah Rhodes
+P-1003,Kingsway Mixed-Use Podium,commercial,Kitchener,77710000.0,2025-07-17,2027-05-31,20.1,22469837.53,Angie Henderson
+P-1004,Tech Park Building C,commercial,Cambridge,76820000.0,2024-11-14,2026-12-27,57.8,43412199.43,Daniel Wagner
+P-1005,Lakeshore Retail Centre,commercial,Hamilton,52236000.0,2024-10-17,2027-03-31,54.6,29881654.67,Cristian Santos
+P-1006,Uptown Data Centre Expansion,commercial,Kitchener,37643000.0,2024-12-25,2027-04-22,45.5,19397642.22,Connie Lawrence
+P-1007,Harbourfront Hotel Retrofit,commercial,Waterloo,43737000.0,2025-06-20,2027-11-15,26.2,11159182.4,Abigail Shaffer
+P-1008,Maple Ridge Condominiums Phase 2,residential,Guelph,26131000.0,2024-11-08,2027-03-11,36.4,13317009.16,Gina Moore
+P-1009,Willow Creek Townhomes,residential,Ottawa,12728000.0,2025-07-25,2027-01-09,37.6,4870641.96,Gabrielle Davis
+P-1010,Bayview Seniors Residence,residential,Brampton,35620000.0,2025-05-16,2027-03-06,44.0,15209059.8,Ryan Munoz
+P-1011,Northgate Rental Apartments,residential,Mississauga,41940000.0,2025-07-27,2027-07-25,25.2,11238520.57,Monica Herrera
+P-1012,Cedar Heights Stacked Towns,residential,Oakville,10755000.0,2025-07-21,2027-01-21,38.5,4004655.13,Jamie Arnold
+P-1013,Parkside Student Housing,residential,Ottawa,14923000.0,2025-05-28,2027-02-13,43.1,6468014.23,Lisa Hensley
+P-1014,Highway 7 Interchange Widening,infrastructure,Ottawa,33022000.0,2025-06-25,2027-02-15,21.5,10556708.74,Michele Williams
+P-1015,Hespeler Road Watermain Replacement,infrastructure,Brampton,61185000.0,2025-03-18,2026-12-06,51.4,30673767.97,Dylan Miller
+P-1016,Speed River Pedestrian Bridge,infrastructure,Kitchener,99105000.0,2024-11-02,2026-10-25,66.5,63691949.53,Brian Ramirez
+P-1017,Eastside Transit Hub Platform,infrastructure,Hamilton,76916000.0,2025-04-10,2027-08-30,25.9,29118674.7,Holly Wood
+P-1018,Conestoga Stormwater Facility,infrastructure,Kitchener,37810000.0,2024-09-03,2026-07-11,75.4,27703503.48,Derek Zuniga
+P-1019,Dundas Street LRT Utility Relocation,infrastructure,Cambridge,103254000.0,2025-05-03,2027-05-29,38.7,46650521.87,Lisa Jackson
+P-1020,Airport Road Resurfacing,infrastructure,Toronto,77999000.0,2025-07-28,2028-01-13,20.4,18521884.04,Carla Gray

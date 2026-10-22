@@ -1,0 +1,452 @@
+task_id,project_id,name,phase,planned_start,planned_end,actual_start,actual_end,is_critical_path,depends_on_task_id,status
+T-1001-01,P-1001,Site clearing & grubbing,Site Preparation,2025-06-03,2025-08-17,2025-06-04,2025-08-22,True,,completed
+T-1001-02,P-1001,Footings formwork & pour,Foundation,2025-08-09,2025-11-03,2025-08-10,2025-11-09,False,T-1001-01,completed
+T-1001-03,P-1001,Foundation walls,Foundation,2025-10-05,2025-12-19,2025-10-11,2026-01-02,True,T-1001-01,completed
+T-1001-04,P-1001,Steel erection levels 1-3,Structure,2025-12-05,2025-12-31,2025-12-12,2026-01-10,False,T-1001-03,completed
+T-1001-05,P-1001,Steel erection levels 4-6,Structure,2025-12-25,2026-01-20,2026-01-08,2026-02-09,True,T-1001-03,completed
+T-1001-06,P-1001,Elevated slab pours,Structure,2026-01-13,2026-02-05,2026-02-02,2026-03-01,True,T-1001-05,completed
+T-1001-07,P-1001,Stair & elevator cores,Structure,2026-02-02,2026-03-05,2026-02-25,,True,T-1001-06,delayed
+T-1001-08,P-1001,Roof structure,Structure,2026-02-22,2026-03-17,,,True,T-1001-07,delayed
+T-1001-09,P-1001,Steel erection levels 1-3 - Zone B,Structure,2026-03-13,2026-04-08,,,False,T-1001-08,delayed
+T-1001-10,P-1001,Steel erection levels 4-6 - Zone B,Structure,2026-04-02,2026-04-27,,,True,T-1001-08,not_started
+T-1001-11,P-1001,Elevated slab pours - Zone B,Structure,2026-04-21,2026-05-21,,,False,T-1001-10,not_started
+T-1001-12,P-1001,Stair & elevator cores - Zone B,Structure,2026-05-10,2026-06-11,,,True,T-1001-10,not_started
+T-1001-13,P-1001,Curtain wall installation,Building Envelope,2026-06-09,2026-07-08,,,False,T-1001-12,not_started
+T-1001-14,P-1001,Exterior cladding,Building Envelope,2026-06-28,2026-07-25,,,True,T-1001-12,not_started
+T-1001-15,P-1001,Roofing membrane,Building Envelope,2026-07-15,2026-08-12,,,True,T-1001-14,not_started
+T-1001-16,P-1001,Window installation,Building Envelope,2026-08-03,2026-08-27,,,True,T-1001-15,not_started
+T-1001-17,P-1001,Curtain wall installation - Zone B,Building Envelope,2026-08-21,2026-09-14,,,False,T-1001-16,not_started
+T-1001-18,P-1001,Exterior cladding - Zone B,Building Envelope,2026-09-09,2026-10-03,,,True,T-1001-16,not_started
+T-1001-19,P-1001,Roofing membrane - Zone B,Building Envelope,2026-09-26,2026-10-19,,,False,T-1001-18,not_started
+T-1001-20,P-1001,Electrical rough-in,MEP Rough-in,2026-10-22,2026-12-06,,,True,T-1001-18,not_started
+T-1001-21,P-1001,HVAC ductwork,MEP Rough-in,2026-11-27,2027-01-12,,,False,T-1001-20,not_started
+T-1001-22,P-1001,Plumbing risers,MEP Rough-in,2027-01-01,2027-02-20,,,False,T-1001-21,not_started
+T-1001-23,P-1001,Fire protection piping,MEP Rough-in,2027-02-07,2027-03-23,,,False,T-1001-22,not_started
+T-1001-24,P-1001,Framing & drywall,Interior Finishes,2027-03-23,2027-05-17,,,True,T-1001-20,not_started
+T-1001-25,P-1001,Ceilings,Interior Finishes,2027-05-02,2027-07-04,,,False,T-1001-24,not_started
+T-1001-26,P-1001,Flooring,Interior Finishes,2027-06-10,2027-08-08,,,False,T-1001-25,not_started
+T-1001-27,P-1001,MEP commissioning,Commissioning & Closeout,2027-07-27,2027-09-30,,,True,T-1001-24,not_started
+T-1002-01,P-1002,Site clearing & grubbing,Site Preparation,2025-01-12,2025-02-21,2025-01-12,2025-02-28,True,,completed
+T-1002-02,P-1002,Temporary services & hoarding,Site Preparation,2025-02-10,2025-03-20,2025-02-13,2025-04-06,False,T-1002-01,completed
+T-1002-03,P-1002,Footings formwork & pour,Foundation,2025-03-14,2025-05-18,2025-03-23,2025-06-08,True,T-1002-01,completed
+T-1002-04,P-1002,Foundation walls,Foundation,2025-05-02,2025-07-09,2025-05-24,2025-08-05,True,T-1002-03,completed
+T-1002-05,P-1002,Steel erection levels 1-3,Structure,2025-06-26,2025-09-18,2025-07-23,2025-11-07,True,T-1002-04,completed
+T-1002-06,P-1002,Steel erection levels 4-6,Structure,2025-08-17,2025-11-05,2025-10-07,2026-01-06,True,T-1002-05,completed
+T-1002-07,P-1002,Elevated slab pours,Structure,2025-10-09,2025-12-11,2025-12-10,2026-03-05,True,T-1002-06,completed
+T-1002-08,P-1002,Curtain wall installation,Building Envelope,2025-12-09,2026-01-24,2026-01-19,,False,T-1002-07,delayed
+T-1002-09,P-1002,Exterior cladding,Building Envelope,2026-01-07,2026-02-12,,,True,T-1002-07,delayed
+T-1002-10,P-1002,Roofing membrane,Building Envelope,2026-02-03,2026-03-19,,,True,T-1002-09,delayed
+T-1002-11,P-1002,Window installation,Building Envelope,2026-03-04,2026-04-15,,,True,T-1002-10,delayed
+T-1002-12,P-1002,Electrical rough-in,MEP Rough-in,2026-04-08,2026-06-12,,,False,T-1002-11,not_started
+T-1002-13,P-1002,HVAC ductwork,MEP Rough-in,2026-05-21,2026-07-19,,,True,T-1002-11,not_started
+T-1002-14,P-1002,Plumbing risers,MEP Rough-in,2026-07-03,2026-09-02,,,True,T-1002-13,not_started
+T-1002-15,P-1002,Framing & drywall,Interior Finishes,2026-08-22,2026-09-15,,,True,T-1002-14,not_started
+T-1002-16,P-1002,Ceilings,Interior Finishes,2026-09-09,2026-10-01,,,False,T-1002-15,not_started
+T-1002-17,P-1002,Flooring,Interior Finishes,2026-09-26,2026-10-23,,,False,T-1002-16,not_started
+T-1002-18,P-1002,Millwork & doors,Interior Finishes,2026-10-14,2026-11-04,,,False,T-1002-17,not_started
+T-1002-19,P-1002,Painting,Interior Finishes,2026-11-02,2026-11-23,,,False,T-1002-18,not_started
+T-1002-20,P-1002,Framing & drywall - Zone B,Interior Finishes,2026-11-19,2026-12-10,,,False,T-1002-19,not_started
+T-1002-21,P-1002,MEP commissioning,Commissioning & Closeout,2026-12-14,2027-01-20,,,True,T-1002-15,not_started
+T-1002-22,P-1002,Deficiency walkthrough,Commissioning & Closeout,2027-01-08,2027-02-10,,,True,T-1002-21,not_started
+T-1003-01,P-1003,Site clearing & grubbing,Site Preparation,2025-07-17,2025-08-25,2025-07-22,2025-09-17,True,,completed
+T-1003-02,P-1003,Temporary services & hoarding,Site Preparation,2025-08-11,2025-09-16,2025-09-11,2025-11-05,True,T-1003-01,completed
+T-1003-03,P-1003,Footings formwork & pour,Foundation,2025-09-10,2025-11-12,2025-11-02,2026-01-22,True,T-1003-02,completed
+T-1003-04,P-1003,Foundation walls,Foundation,2025-10-25,2025-12-25,2026-01-09,,True,T-1003-03,delayed
+T-1003-05,P-1003,Steel erection levels 1-3,Structure,2025-12-14,2026-02-04,,,True,T-1003-04,delayed
+T-1003-06,P-1003,Steel erection levels 4-6,Structure,2026-01-18,2026-03-10,,,True,T-1003-05,delayed
+T-1003-07,P-1003,Elevated slab pours,Structure,2026-02-22,2026-04-18,,,False,T-1003-06,delayed
+T-1003-08,P-1003,Stair & elevator cores,Structure,2026-03-30,2026-05-12,,,True,T-1003-06,not_started
+T-1003-09,P-1003,Curtain wall installation,Building Envelope,2026-05-12,2026-06-14,,,False,T-1003-08,not_started
+T-1003-10,P-1003,Exterior cladding,Building Envelope,2026-06-06,2026-07-13,,,True,T-1003-08,not_started
+T-1003-11,P-1003,Roofing membrane,Building Envelope,2026-07-01,2026-08-05,,,True,T-1003-10,not_started
+T-1003-12,P-1003,Window installation,Building Envelope,2026-07-27,2026-09-05,,,False,T-1003-11,not_started
+T-1003-13,P-1003,Electrical rough-in,MEP Rough-in,2026-08-27,2026-10-08,,,False,T-1003-12,not_started
+T-1003-14,P-1003,HVAC ductwork,MEP Rough-in,2026-09-25,2026-11-08,,,True,T-1003-11,not_started
+T-1003-15,P-1003,Plumbing risers,MEP Rough-in,2026-10-24,2026-12-06,,,False,T-1003-14,not_started
+T-1003-16,P-1003,Fire protection piping,MEP Rough-in,2026-11-21,2027-01-03,,,True,T-1003-14,not_started
+T-1003-17,P-1003,Framing & drywall,Interior Finishes,2026-12-28,2027-01-29,,,False,T-1003-16,not_started
+T-1003-18,P-1003,Ceilings,Interior Finishes,2027-01-21,2027-02-26,,,False,T-1003-17,not_started
+T-1003-19,P-1003,Flooring,Interior Finishes,2027-02-13,2027-03-17,,,False,T-1003-18,not_started
+T-1003-20,P-1003,Millwork & doors,Interior Finishes,2027-03-09,2027-04-11,,,True,T-1003-16,not_started
+T-1003-21,P-1003,MEP commissioning,Commissioning & Closeout,2027-04-08,2027-05-31,,,True,T-1003-20,not_started
+T-1004-01,P-1004,Site clearing & grubbing,Site Preparation,2024-11-14,2025-01-21,2024-11-14,2025-01-27,True,,completed
+T-1004-02,P-1004,Footings formwork & pour,Foundation,2025-01-15,2025-03-29,2025-01-18,2025-04-11,False,T-1004-01,completed
+T-1004-03,P-1004,Foundation walls,Foundation,2025-03-06,2025-05-14,2025-03-13,2025-05-28,True,T-1004-01,completed
+T-1004-04,P-1004,Steel erection levels 1-3,Structure,2025-05-02,2025-05-27,2025-05-15,2025-06-11,True,T-1004-03,completed
+T-1004-05,P-1004,Steel erection levels 4-6,Structure,2025-05-22,2025-06-24,2025-05-28,2025-07-02,False,T-1004-04,completed
+T-1004-06,P-1004,Elevated slab pours,Structure,2025-06-10,2025-07-12,2025-06-26,2025-07-30,True,T-1004-04,completed
+T-1004-07,P-1004,Stair & elevator cores,Structure,2025-06-30,2025-07-23,2025-07-19,2025-08-13,True,T-1004-06,completed
+T-1004-08,P-1004,Roof structure,Structure,2025-07-20,2025-08-19,2025-08-10,2025-09-10,True,T-1004-07,completed
+T-1004-09,P-1004,Steel erection levels 1-3 - Zone B,Structure,2025-08-09,2025-09-03,2025-09-01,2025-09-27,True,T-1004-08,completed
+T-1004-10,P-1004,Steel erection levels 4-6 - Zone B,Structure,2025-08-29,2025-09-24,2025-09-21,2025-10-18,True,T-1004-09,completed
+T-1004-11,P-1004,Elevated slab pours - Zone B,Structure,2025-09-18,2025-10-13,2025-10-13,2025-11-09,True,T-1004-10,completed
+T-1004-12,P-1004,Curtain wall installation,Building Envelope,2025-10-17,2025-12-07,2025-10-30,2025-12-24,False,T-1004-11,completed
+T-1004-13,P-1004,Exterior cladding,Building Envelope,2025-11-25,2026-01-18,2025-12-04,2026-02-02,False,T-1004-12,completed
+T-1004-14,P-1004,Roofing membrane,Building Envelope,2026-01-03,2026-02-27,2026-01-30,,True,T-1004-11,delayed
+T-1004-15,P-1004,Electrical rough-in,MEP Rough-in,2026-02-18,2026-03-13,,,True,T-1004-14,delayed
+T-1004-16,P-1004,HVAC ductwork,MEP Rough-in,2026-03-06,2026-03-30,,,False,T-1004-15,delayed
+T-1004-17,P-1004,Plumbing risers,MEP Rough-in,2026-03-23,2026-04-13,,,False,T-1004-16,not_started
+T-1004-18,P-1004,Fire protection piping,MEP Rough-in,2026-04-07,2026-05-02,,,False,T-1004-17,not_started
+T-1004-19,P-1004,Rooftop equipment set,MEP Rough-in,2026-04-24,2026-05-14,,,False,T-1004-18,not_started
+T-1004-20,P-1004,Electrical rough-in - Zone B,MEP Rough-in,2026-05-11,2026-05-31,,,False,T-1004-19,not_started
+T-1004-21,P-1004,HVAC ductwork - Zone B,MEP Rough-in,2026-05-27,2026-06-19,,,False,T-1004-20,not_started
+T-1004-22,P-1004,Plumbing risers - Zone B,MEP Rough-in,2026-06-12,2026-07-04,,,False,T-1004-21,not_started
+T-1004-23,P-1004,Framing & drywall,Interior Finishes,2026-07-06,2026-08-11,,,True,T-1004-15,not_started
+T-1004-24,P-1004,Ceilings,Interior Finishes,2026-08-02,2026-09-14,,,True,T-1004-23,not_started
+T-1004-25,P-1004,Flooring,Interior Finishes,2026-08-29,2026-10-11,,,False,T-1004-24,not_started
+T-1004-26,P-1004,Millwork & doors,Interior Finishes,2026-09-25,2026-10-28,,,False,T-1004-25,not_started
+T-1004-27,P-1004,MEP commissioning,Commissioning & Closeout,2026-10-28,2026-12-04,,,True,T-1004-24,not_started
+T-1004-28,P-1004,Deficiency walkthrough,Commissioning & Closeout,2026-11-23,2026-12-27,,,True,T-1004-27,not_started
+T-1005-01,P-1005,Site clearing & grubbing,Site Preparation,2024-10-17,2024-12-07,2024-10-16,2024-12-11,True,,completed
+T-1005-02,P-1005,Temporary services & hoarding,Site Preparation,2024-11-20,2024-12-31,2024-11-25,2025-01-09,True,T-1005-01,completed
+T-1005-03,P-1005,Footings formwork & pour,Foundation,2024-12-28,2025-02-28,2025-01-07,2025-03-18,True,T-1005-02,completed
+T-1005-04,P-1005,Foundation walls,Foundation,2025-02-04,2025-03-27,2025-02-22,2025-04-19,True,T-1005-03,completed
+T-1005-05,P-1005,Underslab services,Foundation,2025-03-16,2025-05-08,2025-04-08,2025-06-02,True,T-1005-04,completed
+T-1005-06,P-1005,Steel erection levels 1-3,Structure,2025-04-30,2025-06-18,2025-05-24,2025-07-14,True,T-1005-05,completed
+T-1005-07,P-1005,Steel erection levels 4-6,Structure,2025-06-05,2025-07-21,2025-06-18,2025-08-04,False,T-1005-06,completed
+T-1005-08,P-1005,Elevated slab pours,Structure,2025-07-13,2025-09-06,2025-08-07,2025-10-02,True,T-1005-06,completed
+T-1005-09,P-1005,Stair & elevator cores,Structure,2025-08-18,2025-10-06,2025-09-14,2025-11-04,True,T-1005-08,completed
+T-1005-10,P-1005,Roof structure,Structure,2025-09-25,2025-11-12,2025-10-25,2025-12-17,True,T-1005-09,completed
+T-1005-11,P-1005,Curtain wall installation,Building Envelope,2025-11-11,2026-02-05,2025-11-29,2026-03-11,False,T-1005-10,completed
+T-1005-12,P-1005,Exterior cladding,Building Envelope,2026-01-17,2026-04-18,2026-02-20,,True,T-1005-10,in_progress
+T-1005-13,P-1005,Electrical rough-in,MEP Rough-in,2026-04-02,2026-09-27,,,True,T-1005-12,not_started
+T-1005-14,P-1005,Framing & drywall,Interior Finishes,2026-09-09,2026-11-10,,,True,T-1005-13,not_started
+T-1005-15,P-1005,Ceilings,Interior Finishes,2026-10-21,2026-12-23,,,False,T-1005-14,not_started
+T-1005-16,P-1005,Flooring,Interior Finishes,2026-12-02,2027-01-22,,,False,T-1005-15,not_started
+T-1005-17,P-1005,MEP commissioning,Commissioning & Closeout,2027-01-21,2027-03-08,,,True,T-1005-14,not_started
+T-1005-18,P-1005,Deficiency walkthrough,Commissioning & Closeout,2027-02-19,2027-03-31,,,True,T-1005-17,not_started
+T-1006-01,P-1006,Site clearing & grubbing,Site Preparation,2024-12-25,2025-02-14,2024-12-25,2025-02-21,True,,completed
+T-1006-02,P-1006,Temporary services & hoarding,Site Preparation,2025-01-26,2025-03-08,2025-01-28,2025-04-05,False,T-1006-01,completed
+T-1006-03,P-1006,Footings formwork & pour,Foundation,2025-03-02,2025-05-26,2025-03-18,2025-07-03,False,T-1006-02,completed
+T-1006-04,P-1006,Foundation walls,Foundation,2025-04-28,2025-07-10,2025-05-04,2025-07-28,True,T-1006-01,completed
+T-1006-05,P-1006,Steel erection levels 1-3,Structure,2025-06-28,2025-10-24,2025-07-16,2025-12-02,True,T-1006-04,completed
+T-1006-06,P-1006,Steel erection levels 4-6,Structure,2025-09-23,2026-01-07,2025-11-02,2026-03-06,True,T-1006-05,completed
+T-1006-07,P-1006,Curtain wall installation,Building Envelope,2025-12-31,2026-04-12,2026-02-28,,True,T-1006-06,in_progress
+T-1006-08,P-1006,Exterior cladding,Building Envelope,2026-03-04,2026-05-20,,,False,T-1006-07,delayed
+T-1006-09,P-1006,Electrical rough-in,MEP Rough-in,2026-05-14,2026-06-16,,,True,T-1006-07,not_started
+T-1006-10,P-1006,HVAC ductwork,MEP Rough-in,2026-06-07,2026-07-16,,,False,T-1006-09,not_started
+T-1006-11,P-1006,Plumbing risers,MEP Rough-in,2026-06-30,2026-08-05,,,False,T-1006-10,not_started
+T-1006-12,P-1006,Fire protection piping,MEP Rough-in,2026-07-25,2026-08-28,,,False,T-1006-11,not_started
+T-1006-13,P-1006,Rooftop equipment set,MEP Rough-in,2026-08-18,2026-09-26,,,False,T-1006-12,not_started
+T-1006-14,P-1006,Electrical rough-in - Zone B,MEP Rough-in,2026-09-10,2026-10-12,,,True,T-1006-09,not_started
+T-1006-15,P-1006,Framing & drywall,Interior Finishes,2026-10-13,2027-03-02,,,True,T-1006-14,not_started
+T-1006-16,P-1006,MEP commissioning,Commissioning & Closeout,2027-02-16,2027-04-22,,,True,T-1006-15,not_started
+T-1007-01,P-1007,Site clearing & grubbing,Site Preparation,2025-06-20,2025-09-05,2025-06-21,2025-09-12,True,,completed
+T-1007-02,P-1007,Footings formwork & pour,Foundation,2025-08-28,2025-11-24,2025-09-03,2025-12-04,True,T-1007-01,completed
+T-1007-03,P-1007,Foundation walls,Foundation,2025-10-25,2026-01-08,2025-11-05,2026-01-28,True,T-1007-02,completed
+T-1007-04,P-1007,Steel erection levels 1-3,Structure,2025-12-29,2026-03-14,2026-01-18,,True,T-1007-03,delayed
+T-1007-05,P-1007,Steel erection levels 4-6,Structure,2026-02-28,2026-05-27,2026-03-14,,False,T-1007-04,in_progress
+T-1007-06,P-1007,Elevated slab pours,Structure,2026-04-28,2026-07-10,,,True,T-1007-04,not_started
+T-1007-07,P-1007,Curtain wall installation,Building Envelope,2026-07-09,2026-10-06,,,True,T-1007-06,not_started
+T-1007-08,P-1007,Exterior cladding,Building Envelope,2026-09-13,2026-12-08,,,False,T-1007-07,not_started
+T-1007-09,P-1007,Electrical rough-in,MEP Rough-in,2026-11-25,2027-02-09,,,False,T-1007-08,not_started
+T-1007-10,P-1007,HVAC ductwork,MEP Rough-in,2027-01-13,2027-03-21,,,False,T-1007-09,not_started
+T-1007-11,P-1007,Plumbing risers,MEP Rough-in,2027-03-04,2027-05-18,,,True,T-1007-07,not_started
+T-1007-12,P-1007,Framing & drywall,Interior Finishes,2027-04-30,2027-06-18,,,False,T-1007-11,not_started
+T-1007-13,P-1007,Ceilings,Interior Finishes,2027-05-31,2027-07-09,,,True,T-1007-11,not_started
+T-1007-14,P-1007,Flooring,Interior Finishes,2027-07-01,2027-08-11,,,True,T-1007-13,not_started
+T-1007-15,P-1007,Millwork & doors,Interior Finishes,2027-08-01,2027-09-16,,,False,T-1007-14,not_started
+T-1007-16,P-1007,MEP commissioning,Commissioning & Closeout,2027-09-09,2027-11-15,,,True,T-1007-14,not_started
+T-1008-01,P-1008,Site clearing & grubbing,Site Preparation,2024-11-08,2024-12-04,2024-11-11,2024-12-16,False,,completed
+T-1008-02,P-1008,Temporary services & hoarding,Site Preparation,2024-11-24,2024-12-12,2024-11-27,2024-12-25,True,,completed
+T-1008-03,P-1008,Bulk excavation,Site Preparation,2024-12-10,2025-01-05,2024-12-29,2025-02-08,True,T-1008-02,completed
+T-1008-04,P-1008,Shoring installation,Site Preparation,2024-12-26,2025-01-14,2025-02-06,2025-03-05,True,T-1008-03,completed
+T-1008-05,P-1008,Footings formwork & pour,Foundation,2025-01-15,2025-03-04,2025-02-16,2025-05-06,False,T-1008-04,completed
+T-1008-06,P-1008,Foundation walls,Foundation,2025-02-22,2025-04-09,2025-04-21,2025-06-15,True,T-1008-04,completed
+T-1008-07,P-1008,Underslab services,Foundation,2025-03-30,2025-05-15,2025-06-10,2025-08-24,True,T-1008-06,completed
+T-1008-08,P-1008,Steel erection levels 1-3,Structure,2025-05-14,2025-07-20,2025-08-27,2025-11-14,True,T-1008-07,completed
+T-1008-09,P-1008,Steel erection levels 4-6,Structure,2025-06-27,2025-09-03,2025-10-25,2026-01-24,True,T-1008-08,completed
+T-1008-10,P-1008,Elevated slab pours,Structure,2025-08-11,2025-10-22,2026-01-04,,True,T-1008-09,delayed
+T-1008-11,P-1008,Stair & elevator cores,Structure,2025-09-24,2025-11-24,,,True,T-1008-10,delayed
+T-1008-12,P-1008,Curtain wall installation,Building Envelope,2025-11-18,2026-01-03,,,True,T-1008-11,delayed
+T-1008-13,P-1008,Exterior cladding,Building Envelope,2025-12-20,2026-02-05,,,False,T-1008-12,delayed
+T-1008-14,P-1008,Roofing membrane,Building Envelope,2026-01-21,2026-03-15,,,False,T-1008-13,delayed
+T-1008-15,P-1008,Window installation,Building Envelope,2026-02-23,2026-04-09,,,False,T-1008-14,delayed
+T-1008-16,P-1008,Electrical rough-in,MEP Rough-in,2026-04-02,2026-05-17,,,True,T-1008-12,not_started
+T-1008-17,P-1008,HVAC ductwork,MEP Rough-in,2026-05-09,2026-07-06,,,False,T-1008-16,not_started
+T-1008-18,P-1008,Plumbing risers,MEP Rough-in,2026-06-14,2026-08-01,,,False,T-1008-17,not_started
+T-1008-19,P-1008,Fire protection piping,MEP Rough-in,2026-07-20,2026-09-13,,,True,T-1008-16,not_started
+T-1008-20,P-1008,Framing & drywall,Interior Finishes,2026-09-04,2026-10-03,,,True,T-1008-19,not_started
+T-1008-21,P-1008,Ceilings,Interior Finishes,2026-09-29,2026-10-30,,,True,T-1008-20,not_started
+T-1008-22,P-1008,Flooring,Interior Finishes,2026-10-23,2026-11-23,,,False,T-1008-21,not_started
+T-1008-23,P-1008,Millwork & doors,Interior Finishes,2026-11-15,2026-12-24,,,False,T-1008-22,not_started
+T-1008-24,P-1008,Painting,Interior Finishes,2026-12-10,2027-01-12,,,False,T-1008-23,not_started
+T-1008-25,P-1008,MEP commissioning,Commissioning & Closeout,2027-01-10,2027-02-01,,,False,T-1008-24,not_started
+T-1008-26,P-1008,Deficiency walkthrough,Commissioning & Closeout,2027-01-29,2027-03-01,,,False,T-1008-25,not_started
+T-1008-27,P-1008,Occupancy permit,Commissioning & Closeout,2027-02-17,2027-03-11,,,True,T-1008-21,not_started
+T-1009-01,P-1009,Site clearing & grubbing,Site Preparation,2025-07-25,2025-08-04,2025-07-26,2025-08-06,False,,completed
+T-1009-02,P-1009,Temporary services & hoarding,Site Preparation,2025-08-02,2025-08-13,2025-08-04,2025-08-16,False,T-1009-01,completed
+T-1009-03,P-1009,Bulk excavation,Site Preparation,2025-08-11,2025-08-22,2025-08-12,2025-08-25,True,,completed
+T-1009-04,P-1009,Shoring installation,Site Preparation,2025-08-18,2025-09-01,2025-08-19,2025-09-03,False,T-1009-03,completed
+T-1009-05,P-1009,Site clearing & grubbing - Zone B,Site Preparation,2025-08-26,2025-09-07,2025-08-27,2025-09-09,False,T-1009-04,completed
+T-1009-06,P-1009,Footings formwork & pour,Foundation,2025-09-06,2025-10-18,2025-09-10,2025-10-25,True,T-1009-03,completed
+T-1009-07,P-1009,Foundation walls,Foundation,2025-10-12,2025-11-27,2025-10-18,2025-12-06,True,T-1009-06,completed
+T-1009-08,P-1009,Steel erection levels 1-3,Structure,2025-11-21,2025-12-13,2025-11-25,2025-12-19,False,T-1009-07,completed
+T-1009-09,P-1009,Steel erection levels 4-6,Structure,2025-12-04,2025-12-20,2025-12-12,2025-12-31,True,T-1009-07,completed
+T-1009-10,P-1009,Elevated slab pours,Structure,2025-12-18,2026-01-09,2025-12-30,2026-01-26,True,T-1009-09,completed
+T-1009-11,P-1009,Stair & elevator cores,Structure,2026-01-01,2026-01-22,2026-01-18,2026-02-12,True,T-1009-10,completed
+T-1009-12,P-1009,Roof structure,Structure,2026-01-15,2026-02-02,2026-02-05,2026-02-28,True,T-1009-11,completed
+T-1009-13,P-1009,Steel erection levels 1-3 - Zone B,Structure,2026-01-28,2026-02-15,2026-02-24,2026-03-15,True,T-1009-12,completed
+T-1009-14,P-1009,Steel erection levels 4-6 - Zone B,Structure,2026-02-12,2026-03-01,2026-03-13,,True,T-1009-13,delayed
+T-1009-15,P-1009,Elevated slab pours - Zone B,Structure,2026-02-25,2026-03-18,,,True,T-1009-14,delayed
+T-1009-16,P-1009,Curtain wall installation,Building Envelope,2026-03-17,2026-04-16,,,False,T-1009-15,not_started
+T-1009-17,P-1009,Exterior cladding,Building Envelope,2026-04-06,2026-04-30,,,True,T-1009-15,not_started
+T-1009-18,P-1009,Roofing membrane,Building Envelope,2026-04-26,2026-05-25,,,True,T-1009-17,not_started
+T-1009-19,P-1009,Window installation,Building Envelope,2026-05-16,2026-06-14,,,True,T-1009-18,not_started
+T-1009-20,P-1009,Electrical rough-in,MEP Rough-in,2026-06-09,2026-06-30,,,False,T-1009-19,not_started
+T-1009-21,P-1009,HVAC ductwork,MEP Rough-in,2026-06-25,2026-07-13,,,True,T-1009-19,not_started
+T-1009-22,P-1009,Plumbing risers,MEP Rough-in,2026-07-09,2026-07-31,,,False,T-1009-21,not_started
+T-1009-23,P-1009,Fire protection piping,MEP Rough-in,2026-07-25,2026-08-16,,,False,T-1009-22,not_started
+T-1009-24,P-1009,Rooftop equipment set,MEP Rough-in,2026-08-08,2026-08-31,,,False,T-1009-23,not_started
+T-1009-25,P-1009,Electrical rough-in - Zone B,MEP Rough-in,2026-08-23,2026-09-15,,,False,T-1009-24,not_started
+T-1009-26,P-1009,Framing & drywall,Interior Finishes,2026-09-12,2026-10-15,,,True,T-1009-21,not_started
+T-1009-27,P-1009,Ceilings,Interior Finishes,2026-10-08,2026-11-18,,,False,T-1009-26,not_started
+T-1009-28,P-1009,Flooring,Interior Finishes,2026-11-01,2026-12-09,,,False,T-1009-27,not_started
+T-1009-29,P-1009,MEP commissioning,Commissioning & Closeout,2026-12-01,2026-12-30,,,False,T-1009-28,not_started
+T-1009-30,P-1009,Deficiency walkthrough,Commissioning & Closeout,2026-12-19,2027-01-09,,,True,T-1009-26,not_started
+T-1010-01,P-1010,Site clearing & grubbing,Site Preparation,2025-05-16,2025-06-18,2025-05-16,2025-06-19,True,,completed
+T-1010-02,P-1010,Temporary services & hoarding,Site Preparation,2025-06-10,2025-07-14,2025-06-10,2025-07-15,True,T-1010-01,completed
+T-1010-03,P-1010,Footings formwork & pour,Foundation,2025-07-08,2025-08-16,2025-07-09,2025-08-19,True,T-1010-02,completed
+T-1010-04,P-1010,Foundation walls,Foundation,2025-08-06,2025-09-11,2025-08-08,2025-09-14,False,T-1010-03,completed
+T-1010-05,P-1010,Underslab services,Foundation,2025-09-03,2025-10-13,2025-09-05,2025-10-15,True,T-1010-03,completed
+T-1010-06,P-1010,Steel erection levels 1-3,Structure,2025-10-08,2025-11-03,2025-10-08,2025-11-04,False,T-1010-05,completed
+T-1010-07,P-1010,Steel erection levels 4-6,Structure,2025-10-31,2025-12-06,2025-11-01,2025-12-10,True,T-1010-05,completed
+T-1010-08,P-1010,Elevated slab pours,Structure,2025-11-22,2025-12-26,2025-11-26,2026-01-03,True,T-1010-07,completed
+T-1010-09,P-1010,Stair & elevator cores,Structure,2025-12-15,2026-01-19,2025-12-23,2026-01-30,True,T-1010-08,completed
+T-1010-10,P-1010,Roof structure,Structure,2026-01-06,2026-02-06,2026-01-17,2026-02-22,True,T-1010-09,completed
+T-1010-11,P-1010,Steel erection levels 1-3 - Zone B,Structure,2026-01-29,2026-02-28,2026-02-06,2026-03-12,False,T-1010-10,completed
+T-1010-12,P-1010,Curtain wall installation,Building Envelope,2026-02-28,2026-04-11,2026-03-15,,True,T-1010-10,in_progress
+T-1010-13,P-1010,Exterior cladding,Building Envelope,2026-04-02,2026-05-15,,,False,T-1010-12,not_started
+T-1010-14,P-1010,Roofing membrane,Building Envelope,2026-05-05,2026-06-24,,,True,T-1010-12,not_started
+T-1010-15,P-1010,Electrical rough-in,MEP Rough-in,2026-06-12,2026-07-04,,,True,T-1010-14,not_started
+T-1010-16,P-1010,HVAC ductwork,MEP Rough-in,2026-07-01,2026-07-24,,,False,T-1010-15,not_started
+T-1010-17,P-1010,Plumbing risers,MEP Rough-in,2026-07-19,2026-08-13,,,False,T-1010-16,not_started
+T-1010-18,P-1010,Fire protection piping,MEP Rough-in,2026-08-07,2026-09-02,,,False,T-1010-17,not_started
+T-1010-19,P-1010,Rooftop equipment set,MEP Rough-in,2026-08-25,2026-09-19,,,False,T-1010-18,not_started
+T-1010-20,P-1010,Electrical rough-in - Zone B,MEP Rough-in,2026-09-13,2026-10-09,,,False,T-1010-19,not_started
+T-1010-21,P-1010,Framing & drywall,Interior Finishes,2026-10-08,2026-11-01,,,False,T-1010-20,not_started
+T-1010-22,P-1010,Ceilings,Interior Finishes,2026-10-27,2026-11-21,,,False,T-1010-21,not_started
+T-1010-23,P-1010,Flooring,Interior Finishes,2026-11-15,2026-12-14,,,True,T-1010-15,not_started
+T-1010-24,P-1010,Millwork & doors,Interior Finishes,2026-12-02,2027-01-01,,,False,T-1010-23,not_started
+T-1010-25,P-1010,Painting,Interior Finishes,2026-12-21,2027-01-15,,,False,T-1010-24,not_started
+T-1010-26,P-1010,MEP commissioning,Commissioning & Closeout,2027-01-14,2027-02-15,,,True,T-1010-23,not_started
+T-1010-27,P-1010,Deficiency walkthrough,Commissioning & Closeout,2027-02-05,2027-03-06,,,False,T-1010-26,not_started
+T-1011-01,P-1011,Site clearing & grubbing,Site Preparation,2025-07-27,2025-08-19,2025-07-26,2025-08-20,False,,completed
+T-1011-02,P-1011,Temporary services & hoarding,Site Preparation,2025-08-14,2025-09-11,2025-08-16,2025-09-14,True,,completed
+T-1011-03,P-1011,Bulk excavation,Site Preparation,2025-09-02,2025-09-29,2025-09-03,2025-10-02,False,T-1011-02,completed
+T-1011-04,P-1011,Footings formwork & pour,Foundation,2025-09-23,2026-01-14,2025-09-25,2026-01-30,True,T-1011-02,completed
+T-1011-05,P-1011,Steel erection levels 1-3,Structure,2026-01-03,2026-02-02,2026-01-18,2026-02-24,True,T-1011-04,completed
+T-1011-06,P-1011,Steel erection levels 4-6,Structure,2026-01-22,2026-02-16,2026-02-14,,True,T-1011-05,delayed
+T-1011-07,P-1011,Elevated slab pours,Structure,2026-02-10,2026-03-07,,,True,T-1011-06,delayed
+T-1011-08,P-1011,Stair & elevator cores,Structure,2026-02-28,2026-03-28,,,False,T-1011-07,delayed
+T-1011-09,P-1011,Roof structure,Structure,2026-03-19,2026-04-18,,,True,T-1011-07,not_started
+T-1011-10,P-1011,Steel erection levels 1-3 - Zone B,Structure,2026-04-07,2026-05-06,,,True,T-1011-09,not_started
+T-1011-11,P-1011,Steel erection levels 4-6 - Zone B,Structure,2026-04-26,2026-05-19,,,True,T-1011-10,not_started
+T-1011-12,P-1011,Elevated slab pours - Zone B,Structure,2026-05-15,2026-06-09,,,True,T-1011-11,not_started
+T-1011-13,P-1011,Curtain wall installation,Building Envelope,2026-06-12,2026-07-13,,,False,T-1011-12,not_started
+T-1011-14,P-1011,Exterior cladding,Building Envelope,2026-07-04,2026-08-03,,,False,T-1011-13,not_started
+T-1011-15,P-1011,Roofing membrane,Building Envelope,2026-07-25,2026-08-21,,,False,T-1011-14,not_started
+T-1011-16,P-1011,Window installation,Building Envelope,2026-08-16,2026-09-11,,,False,T-1011-15,not_started
+T-1011-17,P-1011,Curtain wall installation - Zone B,Building Envelope,2026-09-07,2026-10-09,,,True,T-1011-12,not_started
+T-1011-18,P-1011,Electrical rough-in,MEP Rough-in,2026-10-05,2026-11-12,,,False,T-1011-17,not_started
+T-1011-19,P-1011,HVAC ductwork,MEP Rough-in,2026-10-29,2026-12-07,,,True,T-1011-17,not_started
+T-1011-20,P-1011,Plumbing risers,MEP Rough-in,2026-11-24,2027-01-02,,,False,T-1011-19,not_started
+T-1011-21,P-1011,Fire protection piping,MEP Rough-in,2026-12-18,2027-01-26,,,True,T-1011-19,not_started
+T-1011-22,P-1011,Rooftop equipment set,MEP Rough-in,2027-01-12,2027-02-15,,,False,T-1011-21,not_started
+T-1011-23,P-1011,Framing & drywall,Interior Finishes,2027-02-13,2027-04-05,,,True,T-1011-21,not_started
+T-1011-24,P-1011,Ceilings,Interior Finishes,2027-03-19,2027-05-02,,,False,T-1011-23,not_started
+T-1011-25,P-1011,Flooring,Interior Finishes,2027-04-23,2027-06-12,,,False,T-1011-24,not_started
+T-1011-26,P-1011,MEP commissioning,Commissioning & Closeout,2027-06-02,2027-06-16,,,True,T-1011-23,not_started
+T-1011-27,P-1011,Deficiency walkthrough,Commissioning & Closeout,2027-06-12,2027-06-27,,,False,T-1011-26,not_started
+T-1011-28,P-1011,Occupancy permit,Commissioning & Closeout,2027-06-21,2027-07-02,,,True,T-1011-26,not_started
+T-1011-29,P-1011,MEP commissioning - Zone B,Commissioning & Closeout,2027-07-01,2027-07-13,,,True,T-1011-28,not_started
+T-1011-30,P-1011,Deficiency walkthrough - Zone B,Commissioning & Closeout,2027-07-11,2027-07-25,,,True,T-1011-29,not_started
+T-1012-01,P-1012,Site clearing & grubbing,Site Preparation,2025-07-21,2025-09-08,2025-07-20,2025-09-08,True,,completed
+T-1012-02,P-1012,Footings formwork & pour,Foundation,2025-09-03,2025-10-27,2025-09-03,2025-11-02,True,T-1012-01,completed
+T-1012-03,P-1012,Foundation walls,Foundation,2025-10-09,2025-11-27,2025-10-11,2025-12-07,False,T-1012-02,completed
+T-1012-04,P-1012,Steel erection levels 1-3,Structure,2025-11-18,2025-12-30,2025-11-25,2026-01-09,True,T-1012-02,completed
+T-1012-05,P-1012,Steel erection levels 4-6,Structure,2025-12-17,2026-01-30,2025-12-27,2026-02-20,True,T-1012-04,completed
+T-1012-06,P-1012,Elevated slab pours,Structure,2026-01-13,2026-02-18,2026-02-04,,True,T-1012-05,delayed
+T-1012-07,P-1012,Stair & elevator cores,Structure,2026-02-11,2026-03-29,2026-03-11,,True,T-1012-06,in_progress
+T-1012-08,P-1012,Curtain wall installation,Building Envelope,2026-03-18,2026-05-16,,,True,T-1012-07,not_started
+T-1012-09,P-1012,Exterior cladding,Building Envelope,2026-04-28,2026-06-19,,,False,T-1012-08,not_started
+T-1012-10,P-1012,Electrical rough-in,MEP Rough-in,2026-06-13,2026-08-02,,,True,T-1012-08,not_started
+T-1012-11,P-1012,HVAC ductwork,MEP Rough-in,2026-07-14,2026-08-25,,,True,T-1012-10,not_started
+T-1012-12,P-1012,Plumbing risers,MEP Rough-in,2026-08-14,2026-09-22,,,True,T-1012-11,not_started
+T-1012-13,P-1012,Framing & drywall,Interior Finishes,2026-09-20,2026-10-20,,,False,T-1012-12,not_started
+T-1012-14,P-1012,Ceilings,Interior Finishes,2026-10-08,2026-11-02,,,False,T-1012-13,not_started
+T-1012-15,P-1012,Flooring,Interior Finishes,2026-10-28,2026-11-28,,,True,T-1012-12,not_started
+T-1012-16,P-1012,Millwork & doors,Interior Finishes,2026-11-16,2026-12-09,,,True,T-1012-15,not_started
+T-1012-17,P-1012,MEP commissioning,Commissioning & Closeout,2026-12-10,2027-01-01,,,True,T-1012-16,not_started
+T-1012-18,P-1012,Deficiency walkthrough,Commissioning & Closeout,2026-12-28,2027-01-21,,,False,T-1012-17,not_started
+T-1013-01,P-1013,Site clearing & grubbing,Site Preparation,2025-05-28,2025-07-22,2025-05-27,2025-07-23,True,,completed
+T-1013-02,P-1013,Footings formwork & pour,Foundation,2025-07-17,2025-09-11,2025-07-17,2025-09-15,True,T-1013-01,completed
+T-1013-03,P-1013,Foundation walls,Foundation,2025-08-26,2025-10-21,2025-08-31,2025-10-29,True,T-1013-02,completed
+T-1013-04,P-1013,Steel erection levels 1-3,Structure,2025-10-11,2025-10-31,2025-10-18,2025-11-09,True,T-1013-03,completed
+T-1013-05,P-1013,Steel erection levels 4-6,Structure,2025-10-26,2025-11-15,2025-11-05,2025-11-28,True,T-1013-04,completed
+T-1013-06,P-1013,Elevated slab pours,Structure,2025-11-09,2025-12-01,2025-11-21,2025-12-16,True,T-1013-05,completed
+T-1013-07,P-1013,Stair & elevator cores,Structure,2025-11-23,2025-12-12,2025-12-09,2026-01-01,True,T-1013-06,completed
+T-1013-08,P-1013,Roof structure,Structure,2025-12-08,2025-12-29,2025-12-18,2026-01-13,False,T-1013-07,completed
+T-1013-09,P-1013,Steel erection levels 1-3 - Zone B,Structure,2025-12-22,2026-01-12,2026-01-12,2026-02-06,True,T-1013-07,completed
+T-1013-10,P-1013,Steel erection levels 4-6 - Zone B,Structure,2026-01-05,2026-01-27,2026-01-30,2026-02-24,True,T-1013-09,completed
+T-1013-11,P-1013,Elevated slab pours - Zone B,Structure,2026-01-20,2026-02-12,2026-02-16,2026-03-13,True,T-1013-10,completed
+T-1013-12,P-1013,Stair & elevator cores - Zone B,Structure,2026-02-03,2026-02-26,2026-02-16,2026-03-13,False,T-1013-11,completed
+T-1013-13,P-1013,Curtain wall installation,Building Envelope,2026-02-25,2026-04-03,,,True,T-1013-11,delayed
+T-1013-14,P-1013,Exterior cladding,Building Envelope,2026-03-20,2026-04-26,,,False,T-1013-13,not_started
+T-1013-15,P-1013,Roofing membrane,Building Envelope,2026-04-12,2026-05-18,,,False,T-1013-14,not_started
+T-1013-16,P-1013,Window installation,Building Envelope,2026-05-06,2026-06-04,,,True,T-1013-13,not_started
+T-1013-17,P-1013,Electrical rough-in,MEP Rough-in,2026-06-04,2026-07-20,,,True,T-1013-16,not_started
+T-1013-18,P-1013,HVAC ductwork,MEP Rough-in,2026-07-09,2026-08-24,,,False,T-1013-17,not_started
+T-1013-19,P-1013,Plumbing risers,MEP Rough-in,2026-08-13,2026-10-04,,,False,T-1013-18,not_started
+T-1013-20,P-1013,Framing & drywall,Interior Finishes,2026-09-24,2026-12-05,,,True,T-1013-17,not_started
+T-1013-21,P-1013,Ceilings,Interior Finishes,2026-11-07,2027-01-04,,,False,T-1013-20,not_started
+T-1013-22,P-1013,MEP commissioning,Commissioning & Closeout,2026-12-27,2027-01-14,,,False,T-1013-21,not_started
+T-1013-23,P-1013,Deficiency walkthrough,Commissioning & Closeout,2027-01-09,2027-01-29,,,True,T-1013-20,not_started
+T-1013-24,P-1013,Occupancy permit,Commissioning & Closeout,2027-01-23,2027-02-13,,,True,T-1013-23,not_started
+T-1014-01,P-1014,Topographic survey,Survey & Mobilization,2025-06-25,2025-07-11,2025-06-30,2025-07-31,True,,completed
+T-1014-02,P-1014,Traffic management setup,Survey & Mobilization,2025-07-06,2025-07-24,2025-07-30,2025-08-25,True,T-1014-01,completed
+T-1014-03,P-1014,Mobilization,Survey & Mobilization,2025-07-17,2025-08-02,2025-08-22,2025-09-15,True,T-1014-02,completed
+T-1014-04,P-1014,Excavation & grading,Earthworks,2025-07-31,2025-08-31,2025-09-15,2025-11-09,True,T-1014-03,completed
+T-1014-05,P-1014,Subgrade preparation,Earthworks,2025-08-22,2025-09-27,2025-11-08,2026-01-03,True,T-1014-04,completed
+T-1014-06,P-1014,Granular base placement,Earthworks,2025-09-14,2025-10-16,2025-12-29,2026-02-24,True,T-1014-05,completed
+T-1014-07,P-1014,Embankment construction,Earthworks,2025-10-06,2025-11-04,2026-02-22,,True,T-1014-06,delayed
+T-1014-08,P-1014,Storm sewer installation,Drainage & Utilities,2025-11-03,2025-12-05,,,True,T-1014-07,delayed
+T-1014-09,P-1014,Culvert placement,Drainage & Utilities,2025-11-25,2025-12-30,,,True,T-1014-08,delayed
+T-1014-10,P-1014,Watermain installation,Drainage & Utilities,2025-12-19,2026-01-17,,,True,T-1014-09,delayed
+T-1014-11,P-1014,Utility relocation,Drainage & Utilities,2026-01-10,2026-02-06,,,False,T-1014-10,delayed
+T-1014-12,P-1014,Storm sewer installation - Zone B,Drainage & Utilities,2026-02-02,2026-03-08,,,True,T-1014-10,delayed
+T-1014-13,P-1014,Pier & abutment pours,Structures,2026-03-03,2026-03-24,,,True,T-1014-12,delayed
+T-1014-14,P-1014,Girder erection,Structures,2026-03-19,2026-04-10,,,True,T-1014-13,not_started
+T-1014-15,P-1014,Deck pour,Structures,2026-04-02,2026-04-21,,,False,T-1014-14,not_started
+T-1014-16,P-1014,Retaining walls,Structures,2026-04-18,2026-05-12,,,False,T-1014-15,not_started
+T-1014-17,P-1014,Barrier walls,Structures,2026-05-02,2026-05-21,,,True,T-1014-14,not_started
+T-1014-18,P-1014,Pier & abutment pours - Zone B,Structures,2026-05-18,2026-06-11,,,False,T-1014-17,not_started
+T-1014-19,P-1014,Girder erection - Zone B,Structures,2026-06-02,2026-06-21,,,True,T-1014-17,not_started
+T-1014-20,P-1014,Deck pour - Zone B,Structures,2026-06-17,2026-07-06,,,False,T-1014-19,not_started
+T-1014-21,P-1014,Retaining walls - Zone B,Structures,2026-07-02,2026-07-20,,,True,T-1014-19,not_started
+T-1014-22,P-1014,Base course paving,Paving,2026-07-26,2026-08-27,,,True,T-1014-21,not_started
+T-1014-23,P-1014,Surface course paving,Paving,2026-08-17,2026-09-18,,,True,T-1014-22,not_started
+T-1014-24,P-1014,Curb & gutter,Paving,2026-09-09,2026-10-09,,,False,T-1014-23,not_started
+T-1014-25,P-1014,Base course paving - Zone B,Paving,2026-10-01,2026-11-04,,,False,T-1014-24,not_started
+T-1014-26,P-1014,Street lighting,Signage & Lighting,2026-10-29,2026-12-06,,,True,T-1014-23,not_started
+T-1014-27,P-1014,Traffic signals,Signage & Lighting,2026-11-27,2027-01-04,,,False,T-1014-26,not_started
+T-1014-28,P-1014,Landscaping & restoration,Closeout,2026-12-28,2027-01-20,,,True,T-1014-26,not_started
+T-1014-29,P-1014,Final inspection,Closeout,2027-01-13,2027-02-01,,,True,T-1014-28,not_started
+T-1014-30,P-1014,Landscaping & restoration - Zone B,Closeout,2027-01-27,2027-02-15,,,True,T-1014-29,not_started
+T-1015-01,P-1015,Topographic survey,Survey & Mobilization,2025-03-18,2025-04-11,2025-03-19,2025-04-14,True,,completed
+T-1015-02,P-1015,Traffic management setup,Survey & Mobilization,2025-04-05,2025-04-27,2025-04-05,2025-04-28,False,T-1015-01,completed
+T-1015-03,P-1015,Excavation & grading,Earthworks,2025-04-25,2025-06-13,2025-04-28,2025-06-18,True,T-1015-01,completed
+T-1015-04,P-1015,Subgrade preparation,Earthworks,2025-05-26,2025-07-04,2025-05-31,2025-07-10,True,T-1015-03,completed
+T-1015-05,P-1015,Granular base placement,Earthworks,2025-06-27,2025-08-09,2025-07-02,2025-08-14,True,T-1015-04,completed
+T-1015-06,P-1015,Storm sewer installation,Drainage & Utilities,2025-08-03,2025-10-28,2025-08-08,2025-11-04,True,T-1015-05,completed
+T-1015-07,P-1015,Culvert placement,Drainage & Utilities,2025-10-01,2025-12-13,2025-10-15,2026-01-06,True,T-1015-06,completed
+T-1015-08,P-1015,Pier & abutment pours,Structures,2025-12-06,2026-01-09,2025-12-30,2026-02-06,True,T-1015-07,completed
+T-1015-09,P-1015,Girder erection,Structures,2026-01-04,2026-02-18,2026-02-02,,True,T-1015-08,delayed
+T-1015-10,P-1015,Deck pour,Structures,2026-02-01,2026-03-17,2026-03-05,,True,T-1015-09,in_progress
+T-1015-11,P-1015,Retaining walls,Structures,2026-03-01,2026-04-09,,,True,T-1015-10,delayed
+T-1015-12,P-1015,Barrier walls,Structures,2026-03-30,2026-05-09,,,True,T-1015-11,not_started
+T-1015-13,P-1015,Base course paving,Paving,2026-05-06,2026-07-01,,,True,T-1015-12,not_started
+T-1015-14,P-1015,Surface course paving,Paving,2026-06-21,2026-08-25,,,False,T-1015-13,not_started
+T-1015-15,P-1015,Street lighting,Signage & Lighting,2026-08-14,2026-09-08,,,True,T-1015-13,not_started
+T-1015-16,P-1015,Traffic signals,Signage & Lighting,2026-09-03,2026-09-30,,,False,T-1015-15,not_started
+T-1015-17,P-1015,Signage & pavement markings,Signage & Lighting,2026-09-23,2026-10-22,,,False,T-1015-16,not_started
+T-1015-18,P-1015,Landscaping & restoration,Closeout,2026-10-16,2026-11-04,,,True,T-1015-15,not_started
+T-1015-19,P-1015,Final inspection,Closeout,2026-10-28,2026-11-15,,,True,T-1015-18,not_started
+T-1015-20,P-1015,Landscaping & restoration - Zone B,Closeout,2026-11-08,2026-11-26,,,True,T-1015-19,not_started
+T-1015-21,P-1015,Final inspection - Zone B,Closeout,2026-11-20,2026-12-06,,,False,T-1015-20,not_started
+T-1016-01,P-1016,Topographic survey,Survey & Mobilization,2024-11-02,2024-12-02,2024-11-02,2024-12-06,True,,completed
+T-1016-02,P-1016,Traffic management setup,Survey & Mobilization,2024-11-22,2024-12-19,2024-11-25,2024-12-27,True,T-1016-01,completed
+T-1016-03,P-1016,Excavation & grading,Earthworks,2024-12-15,2025-01-07,2024-12-24,2025-01-17,True,T-1016-02,completed
+T-1016-04,P-1016,Subgrade preparation,Earthworks,2025-01-02,2025-01-30,2025-01-11,2025-02-12,True,T-1016-03,completed
+T-1016-05,P-1016,Granular base placement,Earthworks,2025-01-20,2025-02-12,2025-02-03,2025-03-02,True,T-1016-04,completed
+T-1016-06,P-1016,Embankment construction,Earthworks,2025-02-07,2025-03-04,2025-02-24,2025-03-24,True,T-1016-05,completed
+T-1016-07,P-1016,Excavation & grading - Zone B,Earthworks,2025-02-26,2025-03-27,2025-03-08,2025-04-11,False,T-1016-06,completed
+T-1016-08,P-1016,Subgrade preparation - Zone B,Earthworks,2025-03-15,2025-04-06,2025-03-21,2025-04-13,False,T-1016-07,completed
+T-1016-09,P-1016,Storm sewer installation,Drainage & Utilities,2025-04-08,2025-05-07,2025-04-27,2025-05-29,True,T-1016-06,completed
+T-1016-10,P-1016,Culvert placement,Drainage & Utilities,2025-04-30,2025-06-05,2025-05-10,2025-06-16,False,T-1016-09,completed
+T-1016-11,P-1016,Watermain installation,Drainage & Utilities,2025-05-24,2025-06-24,2025-06-16,2025-07-18,True,T-1016-09,completed
+T-1016-12,P-1016,Utility relocation,Drainage & Utilities,2025-06-15,2025-07-15,2025-07-09,2025-08-09,True,T-1016-11,completed
+T-1016-13,P-1016,Storm sewer installation - Zone B,Drainage & Utilities,2025-07-08,2025-08-11,2025-08-01,2025-09-06,True,T-1016-12,completed
+T-1016-14,P-1016,Culvert placement - Zone B,Drainage & Utilities,2025-07-30,2025-08-28,2025-08-25,2025-09-24,True,T-1016-13,completed
+T-1016-15,P-1016,Pier & abutment pours,Structures,2025-08-29,2025-10-26,2025-09-26,2025-11-28,True,T-1016-14,completed
+T-1016-16,P-1016,Girder erection,Structures,2025-10-09,2025-12-12,2025-10-24,2026-01-03,False,T-1016-15,completed
+T-1016-17,P-1016,Deck pour,Structures,2025-11-19,2026-01-17,2025-12-01,2026-02-07,False,T-1016-16,completed
+T-1016-18,P-1016,Retaining walls,Structures,2025-12-29,2026-02-20,2026-01-30,,True,T-1016-15,delayed
+T-1016-19,P-1016,Base course paving,Paving,2026-02-17,2026-03-27,,,True,T-1016-18,delayed
+T-1016-20,P-1016,Surface course paving,Paving,2026-03-17,2026-04-22,,,True,T-1016-19,not_started
+T-1016-21,P-1016,Curb & gutter,Paving,2026-04-12,2026-05-26,,,False,T-1016-20,not_started
+T-1016-22,P-1016,Base course paving - Zone B,Paving,2026-05-10,2026-06-15,,,False,T-1016-21,not_started
+T-1016-23,P-1016,Street lighting,Signage & Lighting,2026-06-12,2026-08-30,,,True,T-1016-20,not_started
+T-1016-24,P-1016,Landscaping & restoration,Closeout,2026-08-22,2026-10-25,,,True,T-1016-23,not_started
+T-1017-01,P-1017,Topographic survey,Survey & Mobilization,2025-04-10,2025-05-13,2025-04-14,2025-05-28,True,,completed
+T-1017-02,P-1017,Traffic management setup,Survey & Mobilization,2025-05-04,2025-06-06,2025-05-27,2025-07-03,True,T-1017-01,completed
+T-1017-03,P-1017,Excavation & grading,Earthworks,2025-06-01,2025-07-13,2025-07-05,2025-09-11,True,T-1017-02,completed
+T-1017-04,P-1017,Subgrade preparation,Earthworks,2025-07-04,2025-08-11,2025-08-11,2025-10-02,False,T-1017-03,completed
+T-1017-05,P-1017,Granular base placement,Earthworks,2025-08-06,2025-09-17,2025-09-05,2025-10-29,False,T-1017-04,completed
+T-1017-06,P-1017,Embankment construction,Earthworks,2025-09-07,2025-10-20,2025-11-09,2026-01-12,True,T-1017-03,completed
+T-1017-07,P-1017,Storm sewer installation,Drainage & Utilities,2025-10-17,2025-12-21,2026-01-13,,True,T-1017-06,delayed
+T-1017-08,P-1017,Culvert placement,Drainage & Utilities,2025-12-10,2026-02-23,2026-02-07,,False,T-1017-07,delayed
+T-1017-09,P-1017,Watermain installation,Drainage & Utilities,2026-02-03,2026-04-27,,,True,T-1017-07,delayed
+T-1017-10,P-1017,Pier & abutment pours,Structures,2026-04-08,2026-07-21,,,True,T-1017-09,not_started
+T-1017-11,P-1017,Girder erection,Structures,2026-06-12,2026-09-17,,,False,T-1017-10,not_started
+T-1017-12,P-1017,Deck pour,Structures,2026-08-16,2026-11-24,,,False,T-1017-11,not_started
+T-1017-13,P-1017,Base course paving,Paving,2026-11-01,2026-12-24,,,True,T-1017-10,not_started
+T-1017-14,P-1017,Surface course paving,Paving,2026-12-04,2027-01-21,,,False,T-1017-13,not_started
+T-1017-15,P-1017,Curb & gutter,Paving,2027-01-06,2027-02-15,,,True,T-1017-13,not_started
+T-1017-16,P-1017,Base course paving - Zone B,Paving,2027-02-07,2027-03-21,,,True,T-1017-15,not_started
+T-1017-17,P-1017,Street lighting,Signage & Lighting,2027-03-20,2027-05-24,,,True,T-1017-16,not_started
+T-1017-18,P-1017,Traffic signals,Signage & Lighting,2027-04-30,2027-06-18,,,False,T-1017-17,not_started
+T-1017-19,P-1017,Landscaping & restoration,Closeout,2027-06-14,2027-08-01,,,True,T-1017-17,not_started
+T-1017-20,P-1017,Final inspection,Closeout,2027-07-17,2027-08-30,,,True,T-1017-19,not_started
+T-1018-01,P-1018,Topographic survey,Survey & Mobilization,2024-09-03,2024-10-18,2024-09-02,2024-10-19,True,,completed
+T-1018-02,P-1018,Excavation & grading,Earthworks,2024-10-14,2024-11-20,2024-10-14,2024-11-23,True,T-1018-01,completed
+T-1018-03,P-1018,Subgrade preparation,Earthworks,2024-11-08,2024-12-09,2024-11-11,2024-12-16,True,T-1018-02,completed
+T-1018-04,P-1018,Granular base placement,Earthworks,2024-12-03,2025-01-07,2024-12-11,2025-01-19,True,T-1018-03,completed
+T-1018-05,P-1018,Embankment construction,Earthworks,2024-12-29,2025-01-29,2025-01-05,2025-02-09,False,T-1018-04,completed
+T-1018-06,P-1018,Storm sewer installation,Drainage & Utilities,2025-01-29,2025-04-14,2025-02-11,2025-05-08,True,T-1018-04,completed
+T-1018-07,P-1018,Culvert placement,Drainage & Utilities,2025-04-01,2025-06-26,2025-04-13,2025-07-14,False,T-1018-06,completed
+T-1018-08,P-1018,Pier & abutment pours,Structures,2025-06-12,2025-08-14,2025-07-07,2025-09-10,True,T-1018-06,completed
+T-1018-09,P-1018,Girder erection,Structures,2025-08-01,2025-10-20,2025-08-28,2025-11-19,True,T-1018-08,completed
+T-1018-10,P-1018,Deck pour,Structures,2025-09-21,2025-12-01,2025-10-22,2026-01-10,True,T-1018-09,completed
+T-1018-11,P-1018,Base course paving,Paving,2025-11-20,2026-01-05,2025-12-09,2026-01-31,False,T-1018-10,completed
+T-1018-12,P-1018,Surface course paving,Paving,2025-12-24,2026-02-09,2026-02-01,,True,T-1018-10,delayed
+T-1018-13,P-1018,Curb & gutter,Paving,2026-01-26,2026-03-07,2026-03-13,,True,T-1018-12,delayed
+T-1018-14,P-1018,Street lighting,Signage & Lighting,2026-03-06,2026-04-23,,,True,T-1018-13,delayed
+T-1018-15,P-1018,Traffic signals,Signage & Lighting,2026-04-07,2026-05-16,,,False,T-1018-14,not_started
+T-1018-16,P-1018,Landscaping & restoration,Closeout,2026-05-13,2026-06-09,,,False,T-1018-15,not_started
+T-1018-17,P-1018,Final inspection,Closeout,2026-05-29,2026-06-18,,,True,T-1018-14,not_started
+T-1018-18,P-1018,Landscaping & restoration - Zone B,Closeout,2026-06-16,2026-07-11,,,False,T-1018-17,not_started
+T-1019-01,P-1019,Topographic survey,Survey & Mobilization,2025-05-03,2025-06-01,2025-05-03,2025-06-05,True,,completed
+T-1019-02,P-1019,Traffic management setup,Survey & Mobilization,2025-05-24,2025-06-21,2025-05-27,2025-06-26,False,T-1019-01,completed
+T-1019-03,P-1019,Excavation & grading,Earthworks,2025-06-16,2025-08-11,2025-06-20,2025-08-24,True,T-1019-01,completed
+T-1019-04,P-1019,Subgrade preparation,Earthworks,2025-07-24,2025-09-22,2025-08-07,2025-10-19,True,T-1019-03,completed
+T-1019-05,P-1019,Granular base placement,Earthworks,2025-08-31,2025-10-28,2025-09-15,2025-11-19,False,T-1019-04,completed
+T-1019-06,P-1019,Storm sewer installation,Drainage & Utilities,2025-10-14,2026-02-05,2025-11-09,,True,T-1019-04,delayed
+T-1019-07,P-1019,Culvert placement,Drainage & Utilities,2025-12-24,2026-03-22,2026-01-18,,False,T-1019-06,in_progress
+T-1019-08,P-1019,Pier & abutment pours,Structures,2026-03-14,2026-06-09,,,True,T-1019-06,delayed
+T-1019-09,P-1019,Girder erection,Structures,2026-05-09,2026-07-24,,,True,T-1019-08,not_started
+T-1019-10,P-1019,Deck pour,Structures,2026-07-05,2026-09-29,,,True,T-1019-09,not_started
+T-1019-11,P-1019,Base course paving,Paving,2026-09-09,2026-12-03,,,False,T-1019-10,not_started
+T-1019-12,P-1019,Surface course paving,Paving,2026-11-05,2027-01-21,,,True,T-1019-10,not_started
+T-1019-13,P-1019,Street lighting,Signage & Lighting,2027-01-08,2027-04-02,,,True,T-1019-12,not_started
+T-1019-14,P-1019,Landscaping & restoration,Closeout,2027-03-24,2027-04-28,,,False,T-1019-13,not_started
+T-1019-15,P-1019,Final inspection,Closeout,2027-04-21,2027-05-29,,,True,T-1019-13,not_started
+T-1020-01,P-1020,Topographic survey,Survey & Mobilization,2025-07-28,2025-09-25,2025-07-27,2025-10-05,True,,completed
+T-1020-02,P-1020,Excavation & grading,Earthworks,2025-09-20,2025-12-30,2025-09-30,2026-01-28,True,T-1020-01,completed
+T-1020-03,P-1020,Subgrade preparation,Earthworks,2025-11-26,2026-02-25,2025-12-26,,True,T-1020-02,delayed
+T-1020-04,P-1020,Storm sewer installation,Drainage & Utilities,2026-02-10,2026-04-03,2026-03-07,,False,T-1020-03,in_progress
+T-1020-05,P-1020,Culvert placement,Drainage & Utilities,2026-03-24,2026-05-24,,,True,T-1020-03,not_started
+T-1020-06,P-1020,Watermain installation,Drainage & Utilities,2026-05-05,2026-07-11,,,True,T-1020-05,not_started
+T-1020-07,P-1020,Utility relocation,Drainage & Utilities,2026-06-17,2026-08-05,,,False,T-1020-06,not_started
+T-1020-08,P-1020,Pier & abutment pours,Structures,2026-08-07,2026-09-27,,,False,T-1020-07,not_started
+T-1020-09,P-1020,Girder erection,Structures,2026-09-17,2026-11-16,,,False,T-1020-08,not_started
+T-1020-10,P-1020,Deck pour,Structures,2026-10-27,2026-12-19,,,True,T-1020-06,not_started
+T-1020-11,P-1020,Retaining walls,Structures,2026-12-06,2027-02-08,,,True,T-1020-10,not_started
+T-1020-12,P-1020,Barrier walls,Structures,2027-01-16,2027-03-14,,,False,T-1020-11,not_started
+T-1020-13,P-1020,Base course paving,Paving,2027-03-09,2027-06-04,,,False,T-1020-12,not_started
+T-1020-14,P-1020,Surface course paving,Paving,2027-05-15,2027-08-14,,,True,T-1020-11,not_started
+T-1020-15,P-1020,Street lighting,Signage & Lighting,2027-07-30,2027-11-06,,,True,T-1020-14,not_started
+T-1020-16,P-1020,Landscaping & restoration,Closeout,2027-10-27,2027-11-23,,,False,T-1020-15,not_started
+T-1020-17,P-1020,Final inspection,Closeout,2027-11-12,2027-12-03,,,True,T-1020-15,not_started
+T-1020-18,P-1020,Landscaping & restoration - Zone B,Closeout,2027-11-30,2027-12-23,,,True,T-1020-17,not_started
+T-1020-19,P-1020,Final inspection - Zone B,Closeout,2027-12-16,2028-01-13,,,True,T-1020-18,not_started

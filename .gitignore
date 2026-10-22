@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/output_spark/
+.DS_Store
+node_modules/
+.jdk/
+
+# Local-only screenshots
+docs/img/*.jpg
+docs/img/*.png

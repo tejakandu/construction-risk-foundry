@@ -1,0 +1,16 @@
+supplier_id,name,material_category,on_time_rate,city
+SUP-01,Ontario Ready-Mix Concrete,Concrete,0.94,Mississauga
+SUP-02,Grand River Concrete Co.,Concrete,0.9,Ottawa
+SUP-03,Steeltown Rebar Ltd.,Rebar,0.91,Hamilton
+SUP-04,Great Lakes Structural Steel,Structural Steel,0.52,Cambridge
+SUP-05,Maple Leaf Steel Fabricators,Structural Steel,0.89,Cambridge
+SUP-06,Northshore Glazing Systems,Glazing & Cladding,0.48,Barrie
+SUP-07,Laurentian Curtain Wall,Glazing & Cladding,0.87,Mississauga
+SUP-08,Trillium Electrical Supply,Electrical,0.93,London
+SUP-09,Canuck Mechanical & HVAC,Mechanical,0.88,Brampton
+SUP-10,Bayview Plumbing Wholesale,Plumbing,0.92,Mississauga
+SUP-11,Northern Gypsum & Finishes,Drywall & Finishes,0.9,Guelph
+SUP-12,Escarpment Aggregates,Aggregates,0.95,Oakville
+SUP-13,Huron Precast & Pipe,Pipe & Precast,0.55,London
+SUP-14,Lakehead Pipe & Precast,Pipe & Precast,0.9,Ottawa
+SUP-15,401 Asphalt Paving Supply,Asphalt,0.91,London
