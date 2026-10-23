@@ -8,10 +8,13 @@ Built on Palantir Foundry: PySpark pipelines → Ontology → explainable risk s
 Workshop dashboard → AIP agent that traces root causes through the Ontology and triggers
 governed Actions.
 
-> 📺 **2-minute demo:** _[Loom link]_ &nbsp;·&nbsp; 🧭 **Setup guide:** [docs/foundry_setup.md](docs/foundry_setup.md)
+> 📺 **34-second demo video:** [watch it here](docs/demo.mp4) &nbsp;·&nbsp; 🧭 **Setup guide:** [docs/foundry_setup.md](docs/foundry_setup.md)
 
-![Workshop dashboard](docs/img/dashboard.png)
-<!-- screenshot placeholder: Construction Risk Cockpit, project table + metric cards -->
+[![Demo video: click to watch](docs/demo_poster.jpg)](docs/demo.mp4)
+
+**The published Workshop app:** every project ranked by risk, with the reasons and one-click Actions.
+
+![Construction Risk Cockpit in Workshop](docs/screenshots/cockpit.png)
 
 ---
 
@@ -72,8 +75,7 @@ flowchart LR
    rule-based playbook, and, after human confirmation, executes **Actions** (flag supplier,
    create follow-up task) that write back to the Ontology with a full audit trail.
 
-![Agent conversation](docs/img/agent_chat.png)
-<!-- screenshot placeholder: agent explaining P-1014 and proposing actions -->
+![Project Risk Agent proposing Flag Supplier and Create Follow-up Task for P-1014](docs/screenshots/agent_actions.png)
 
 ## Risk score: how it works
 
@@ -147,7 +149,9 @@ supplier scorecard flags all three chronic suppliers. This is enforced in
 ├── data/output/                  # reference scores to validate Foundry against
 └── docs/
     ├── foundry_setup.md          # step-by-step Foundry + AIP guide
-    └── demo_script.md            # 2-minute demo
+    ├── demo_script.md            # 2-minute demo script
+    ├── demo.mp4                  # 34-second demo video
+    └── screenshots/              # Foundry screenshots used in this README
 ```
 
 ## Run it locally
@@ -180,8 +184,8 @@ AIP Agent Studio, AIP Logic), PySpark, TypeScript Functions, Python (pandas, num
 
 | | |
 |---|---|
-| ![Lineage](docs/img/lineage.png) Data lineage | ![Ontology](docs/img/ontology_graph.png) Ontology graph |
-| ![Project](docs/img/project_drilldown.png) Project drill-down | ![Action](docs/img/action_confirm.png) Agent-proposed Action |
+| ![Project drill-down](docs/screenshots/project_drilldown.png) Project drill-down: linked change orders, material orders, site logs and tasks | ![Ontology](docs/screenshots/ontology.png) Ontology Manager: Project properties, Actions and link types |
+| ![Published functions](docs/screenshots/functions.png) Published TypeScript functions (agent tools + Action edits) | ![Score breakdown](docs/screenshots/score_breakdown.png) Explainable score for P-1014 (from the demo video) |
 
 ---
 
