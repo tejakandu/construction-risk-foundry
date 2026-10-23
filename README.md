@@ -8,9 +8,9 @@ Built on Palantir Foundry: PySpark pipelines → Ontology → explainable risk s
 Workshop dashboard → AIP agent that traces root causes through the Ontology and triggers
 governed Actions.
 
-> 📺 **34-second demo video:** [watch it here](docs/demo.mp4) &nbsp;·&nbsp; 🧭 **Setup guide:** [docs/foundry_setup.md](docs/foundry_setup.md)
+> 📺 **34-second demo video:** [watch it here](https://github.com/tejakandu/construction-risk-foundry/raw/main/docs/demo.mp4) &nbsp;·&nbsp; 🧭 **Setup guide:** [docs/foundry_setup.md](docs/foundry_setup.md)
 
-[![Demo video: click to watch](docs/demo_poster.jpg)](docs/demo.mp4)
+[![Demo video: click to watch](docs/demo_poster.jpg)](https://github.com/tejakandu/construction-risk-foundry/raw/main/docs/demo.mp4)
 
 **The published Workshop app:** every project ranked by risk, with the reasons and one-click Actions.
 
