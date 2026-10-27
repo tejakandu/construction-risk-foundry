@@ -12,6 +12,10 @@ governed Actions.
 
 
 
+
+https://github.com/user-attachments/assets/5ea45460-9500-4673-a9da-2751c5f59169
+
+
 [![Demo video: click to watch](docs/demo_poster.jpg)](https://github.com/tejakandu/construction-risk-foundry/raw/main/docs/demo.mp4)
 
 **The published Workshop app:** every project ranked by risk, with the reasons and one-click Actions.
