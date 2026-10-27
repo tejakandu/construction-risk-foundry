@@ -10,7 +10,7 @@ governed Actions.
 
 > 📺 **34-second demo video:** [watch with sound](https://github.com/user-attachments/assets/5ea45460-9500-4673-a9da-2751c5f59169) &nbsp;·&nbsp; 🧭 **Setup guide:** [docs/foundry_setup.md](docs/foundry_setup.md)
 
-[![Demo: Construction Risk Cockpit on Palantir Foundry + AIP (click for the version with sound)](docs/demo.gif)](https://github.com/user-attachments/assets/5ea45460-9500-4673-a9da-2751c5f59169)
+[![Demo: Construction Risk Cockpit on Palantir Foundry + AIP (click for the version with sound)](docs/demo.gif)](docs/demo.mp4)
 
 **The published Workshop app:** every project ranked by risk, with the reasons and one-click Actions.
 
